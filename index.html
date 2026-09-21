@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO METADATA ===================== -->
+  <title>Namrata Soni — Cloud Infrastructure &amp; Security Engineer</title>
+  <meta name="description" content="Namrata Soni — Cloud Infrastructure &amp; Security Engineer at Celebal Technologies. Focused on Azure, DevOps, Terraform, Databricks, Microsoft Fabric, and AI infrastructure." />
+  <meta name="keywords" content="Namrata Soni, Cloud Infrastructure, Cloud Security, Azure, DevOps, Terraform, Databricks, Microsoft Fabric, AI Infrastructure, Celebal Technologies" />
+  <meta name="author" content="Namrata Soni" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://namrata-soni.github.io/namrata-soni-portfolio/" />
+
+  <!-- Open Graph / LinkedIn preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Namrata Soni — Cloud Infrastructure &amp; Security Engineer" />
+  <meta property="og:description" content="Building secure, scalable, and automated cloud infrastructure. Azure · DevOps · Terraform · Data Platforms · AI Infrastructure." />
+  <meta property="og:url" content="https://namrata-soni.github.io/namrata-soni-portfolio/" />
+  <meta property="og:site_name" content="Namrata Soni — Portfolio" />
+
+  <!-- Twitter / X preview -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Namrata Soni — Cloud Infrastructure &amp; Security Engineer" />
+  <meta name="twitter:description" content="Building secure, scalable, and automated cloud infrastructure. Azure · DevOps · Terraform · Data Platforms · AI Infrastructure." />
+
+  <!-- ===================== FAVICON ===================== -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0f1a'/%3E%3Cpath d='M50 20a18 18 0 0 1 17.5 14A15 15 0 0 1 72 78H30a15 15 0 0 1-2-29.9A18 18 0 0 1 50 20z' fill='none' stroke='%236d8cff' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+  <!-- ===================== FONTS ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+
+  <!-- ===================== BOOTSTRAP (grid utilities only) ===================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- ===================== BOOTSTRAP ICONS ===================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- ===================== CUSTOM STYLES ===================== -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+
+<body>
+  <!-- Decorative technical grid background (fixed, non-interactive) -->
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <!-- =====================================================================
+       NAVBAR
+       ===================================================================== -->
+  <nav class="navbar-custom" aria-label="Main navigation">
+    <div class="container-narrow">
+      <a href="#hero" class="brand">
+        <span class="brand-mark"><i class="bi bi-cloud"></i></span>
+        <span>Namrata Soni<small>Cloud Infra &amp; Security</small></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about" data-nav="about">About</a>
+        <a href="#skills" data-nav="skills">Skills</a>
+        <a href="#experience" data-nav="experience">Experience</a>
+        <a href="#projects" data-nav="projects">Projects</a>
+        <a href="#learning" data-nav="learning">Learning</a>
+        <a href="#approach" data-nav="approach">Approach</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </div>
+
+      <button class="icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle dark and light theme">
+        <i class="bi bi-sun"></i>
+        <i class="bi bi-moon"></i>
+      </button>
+
+      <button class="icon-btn nav-toggle" id="navToggle" title="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu panel -->
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#learning">Learning</a>
+    <a href="#approach">Approach</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <!-- ==================================================================
+         A. HERO
+         ================================================================== -->
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <div class="container-narrow">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <!-- Profile photo. Save your photo at assets/images/profile.jpg
+                 (or .png) and update the src below. If the file is missing,
+                 the image hides itself so the page still looks correct. -->
+            <img class="hero-avatar" src="assets/images/profile.jpg"
+                 alt="Namrata Soni"
+                 onerror="this.style.display='none'" />
+            <span class="hero-badge"><span class="dot"></span> Open to cloud infrastructure &amp; DevOps opportunities</span>
+            <h1 id="heroTitle">Namrata Soni</h1>
+            <p class="role">Cloud Infrastructure &amp; Security Engineer</p>
+            <p class="lead">
+              I work on cloud infrastructure, security, automation, and modern data platforms, with a focus on
+              Azure, DevOps, Terraform, Databricks, Microsoft Fabric, and AI infrastructure. I enjoy turning
+              complex cloud concepts into secure, practical, and scalable solutions.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn-tech">View My Work <i class="bi bi-arrow-right"></i></a>
+              <a href="#contact" class="btn-tech btn-tech-outline">Connect With Me <i class="bi bi-link-45deg"></i></a>
+              <a href="LINKEDIN_URL" target="_blank" rel="noopener noreferrer" class="btn-tech btn-tech-ghost">
+                <i class="bi bi-linkedin"></i> LinkedIn
+              </a>
+            </div>
+            <div class="hero-meta">
+              <span><i class="bi bi-building"></i> Celebal Technologies</span>
+              <span><i class="bi bi-cloud"></i> Azure Cloud Infrastructure</span>
+              <span><i class="bi bi-shield-lock"></i> Cloud Security</span>
+            </div>
+          </div>
+
+          <!-- Technical illustration: connected cloud infrastructure nodes -->
+          <div class="hero-visual">
+            <div class="node-canvas">
+              <svg viewBox="0 0 400 400" role="img" aria-label="Diagram of connected cloud infrastructure nodes">
+                <!-- connection lines -->
+                <line class="nlink dash" x1="200" y1="70"  x2="90"  y2="180" />
+                <line class="nlink dash" x1="200" y1="70"  x2="310" y2="180" />
+                <line class="nlink dash" x1="90"  y1="180" x2="200" y2="290" />
+                <line class="nlink dash" x1="310" y1="180" x2="200" y2="290" />
+                <line class="nlink dash" x1="90"  y1="180" x2="310" y2="180" />
+                <line class="nlink"      x1="200" y1="290" x2="200" y2="350" />
+
+                <!-- nodes -->
+                <g class="pulse" style="animation-delay:0s">
+                  <rect class="nbox ncore" x="150" y="40" width="100" height="60" rx="12" />
+                  <text x="200" y="75" text-anchor="middle">USER / CLIENT</text>
+                </g>
+                <g class="pulse" style="animation-delay:.4s">
+                  <rect class="nbox" x="35" y="150" width="110" height="60" rx="12" />
+                  <text x="90" y="185" text-anchor="middle">APP GATEWAY</text>
+                </g>
+                <g class="pulse" style="animation-delay:.8s">
+                  <rect class="nbox" x="255" y="150" width="110" height="60" rx="12" />
+                  <text x="310" y="185" text-anchor="middle">PRIVATE LINK</text>
+ </g>
+                <g class="pulse" style="animation-delay:1.2s">
+                  <rect class="nbox" x="145" y="260" width="110" height="60" rx="12" />
+                  <text x="200" y="295" text-anchor="middle">AKS / FABRIC</text>
+                </g>
+                <g class="pulse" style="animation-delay:1.6s">
+                  <rect class="nbox ncore" x="150" y="340" width="100" height="46" rx="12" />
+                  <text x="200" y="368" text-anchor="middle">DATA PLATFORM</text>
+                </g>
+              </svg>
+            </div>
+
+            <div class="terminal">
+              <div class="terminal-bar">
+                <i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i>
+                <span class="t-title">infra-terminal — azure</span>
+              </div>
+              <div class="terminal-body">
+                <div><span class="c-prompt">$</span> terraform plan</div>
+                <div class="c-dim">Plan: 12 to add, 0 to change, 0 to destroy.</div>
+                <div><span class="c-prompt">$</span> az network private-endpoint list</div>
+                <div class="c-ok">&#10003; private connectivity configured</div>
+                <div><span class="c-prompt">$</span> <span class="cursor-blink"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         B. ABOUT
+         ================================================================== -->
+    <section class="section section--sunken" id="about" aria-labelledby="aboutTitle">
+      <div class="container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">About Me</span>
+          <h2 id="aboutTitle">Focused on secure, scalable cloud infrastructure</h2>
+        </div>
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-7 reveal">
+            <p class="lead">
+              I am a Cloud Infrastructure &amp; Security professional focused on building and understanding secure,
+              scalable cloud environments. My work and learning span Azure infrastructure, networking, DevOps,
+              Terraform, data platforms, and AI infrastructure.
+            </p>
+            <p>
+              I enjoy solving infrastructure challenges, exploring cloud-native services, and translating technical
+              requirements into practical implementations. My exposure covers enterprise data-platform use cases,
+              private connectivity, identity and access control, and the day-to-day troubleshooting that keeps
+              cloud platforms reliable.
+            </p>
+            <p class="mb-0">
+              I'm currently deepening my hands-on understanding of Microsoft Fabric, Databricks, AI
+              infrastructure, and observability — learning by building labs, writing documentation, and working
+              through real configuration problems.
+            </p>
+          </div>
+
+          <div class="col-lg-5 reveal">
+            <div class="card-tech h-100">
+              <h3 class="mb-3"><i class="bi bi-stars"></i> What I enjoy working on</h3>
+              <ul class="tag-list">
+                <li class="tag"><i class="bi bi-cloud"></i> Cloud infrastructure design</li>
+                <li class="tag"><i class="bi bi-filetype-tf"></i> Infrastructure as Code</li>
+                <li class="tag"><i class="bi bi-ethernet"></i> Networking &amp; private connectivity</li>
+                <li class="tag"><i class="bi bi-shield-lock"></i> Cloud security &amp; access control</li>
+                <li class="tag"><i class="bi bi-gear"></i> DevOps automation</li>
+                <li class="tag"><i class="bi bi-database"></i> Data platform infrastructure</li>
+                <li class="tag"><i class="bi bi-cpu"></i> AI/GenAI infrastructure</li>
+                <li class="tag"><i class="bi bi-journal-text"></i> Troubleshooting &amp; documentation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         C. SKILLS
+         ================================================================== -->
+    <section class="section" id="skills" aria-labelledby="skillsTitle">
+      <div class="container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">Technical Skills</span>
+          <h2 id="skillsTitle">A categorized view of my technical stack</h2>
+          <p>
+            Grouped by domain rather than scored with percentages — these are the areas I actively work in
+            or am building hands-on experience with.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Cloud & Infrastructure -->
+          <div class="card-tech skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon"><i class="bi bi-cloud"></i></span>
+              <h3>Cloud &amp; Infrastructure</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Microsoft Azure</li>
+              <li class="tag">Azure Resource Groups</li>
+              <li class="tag">Virtual Networks &amp; Subnets</li>
+              <li class="tag">Private Endpoints</li>
+              <li class="tag">Private DNS</li>
+              <li class="tag">Azure Private Link</li>
+              <li class="tag">Azure Application Gateway</li>
+              <li class="tag">Azure Load Balancer</li>
+              <li class="tag">Azure VPN / Networking</li>
+              <li class="tag">Azure Virtual Machines</li>
+              <li class="tag">Azure Kubernetes Service (AKS)</li>
+              <li class="tag">Azure Arc</li>
+              <li class="tag">Azure Stack HCI</li>
+            </ul>
+          </div>
+
+          <!-- Infrastructure as Code & Automation -->
+          <div class="card-tech skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon"><i class="bi bi-filetype-tf"></i></span>
+              <h3>Infrastructure as Code &amp; Automation</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Terraform</li>
+              <li class="tag">Terraform Modules</li>
+              <li class="tag">Variables, Outputs &amp; tfvars</li>
+              <li class="tag">Remote State Concepts</li>
+              <li class="tag">Infrastructure Provisioning</li>
+              <li class="tag">PowerShell</li>
+              <li class="tag">Python</li>
+              <li class="tag">YAML</li>
+            </ul>
+          </div>
+
+          <!-- DevOps & CI/CD -->
+          <div class="card-tech skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon"><i class="bi bi-git"></i></span>
+              <h3>DevOps &amp; CI/CD</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Azure DevOps</li>
+              <li class="tag">Azure Repos</li>
+              <li class="tag">Azure Pipelines</li>
+              <li class="tag">YAML Pipelines</li>
+              <li class="tag">Build &amp; Release Automation</li>
+              <li class="tag">Git</li>
+              <li class="tag">GitHub</li>
+              <li class="tag">CI/CD Fundamentals</li>
+            </ul>
+          </div>
+
+          <!-- Data Platforms -->
+          <div class="card-tech skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon"><i class="bi bi-database"></i></span>
+              <h3>Data Platforms</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Microsoft Fabric</li>
+              <li class="tag">Azure Databricks</li>
+              <li class="tag">Azure Data Factory</li>
+              <li class="tag">ADLS Gen2</li>
+              <li class="tag">Unity Catalog</li>
+              <li class="tag">External Locations</li>
+              <li class="tag">Storage Credentials</li>
+              <li class="tag">Lakehouse &amp; Warehouse</li>
+              <li class="tag">Purview</li>
+              <li class="tag">Lakeflow Connect</li>
+              <li class="tag">Oracle CDC Concepts</li>
+              <li class="tag">Event Hubs</li>
+              <li class="tag">IoT Hub</li>
+              <li class="tag">MQTT</li>
+              <li class="tag">PostgreSQL</li>
+              <li class="tag">SQL Server</li>
+            </ul>
+          </div>
+
+          <!-- Containers & Kubernetes -->
+          <div class="card-tech skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon"><i class="bi bi-boxes"></i></span>
+              <h3>Containers &amp; Kubernetes</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Docker</li>
+              <li class="tag">Kubernetes</li>
+              <li class="tag">AKS</li>
+              <li class="tag">Application Gateway Ingress Controller (AGIC)</li>
+              <li class="tag">Ingress</li>
+              <li class="tag">Services</li>
+              <li class="tag">Node Pools</li>
+              <li class="tag">Autoscaling</li>
+              <li class="tag">HPA / VPA Concepts</li>
+            </ul>
+          </div>
+
+          <!-- AI, GenAI & Observability -->
+          <div class="card-tech skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon"><i class="bi bi-cpu"></i></span>
+              <h3>AI, GenAI &amp; Observability</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Azure AI Foundry</li>
+              <li class="tag">Azure AI Services</li>
+              <li class="tag">AI Infrastructure</li>
+              <li class="tag">RAG Concepts</li>
+              <li class="tag">AI Agents Concepts</li>
+              <li class="tag">ClickHouse</li>
+              <li class="tag">ClickStack</li>
+              <li class="tag">Langfuse</li>
+              <li class="tag">LangChain</li>
+              <li class="tag">Grafana</li>
+              <li class="tag">MCP</li>
+              <li class="tag">LibreChat</li>
+            </ul>
+          </div>
+
+          <!-- Security & Identity -->
+          <div class="card-tech skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon"><i class="bi bi-shield-lock"></i></span>
+              <h3>Security &amp; Identity</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Microsoft Entra ID</li>
+              <li class="tag">RBAC</li>
+              <li class="tag">Managed Identities</li>
+              <li class="tag">Service Principals</li>
+              <li class="tag">Private Connectivity</li>
+              <li class="tag">Network Security Concepts</li>
+              <li class="tag">Cloud Security Fundamentals</li>
+            </ul>
+          </div>
+
+          <!-- Tools -->
+          <div class="card-tech skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon"><i class="bi bi-tools"></i></span>
+              <h3>Tools</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Git</li>
+              <li class="tag">VS Code</li>
+              <li class="tag">Azure Portal</li>
+              <li class="tag">Azure DevOps</li>
+              <li class="tag">Terraform CLI</li>
+              <li class="tag">Docker</li>
+              <li class="tag">PowerShell</li>
+              <li class="tag">Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         4. PROFESSIONAL EXPERIENCE
+         ================================================================== -->
+    <section class="section section--sunken" id="experience" aria-labelledby="experienceTitle">
+      <div class="container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">Professional Experience</span>
+          <h2 id="experienceTitle">Professional Experience &amp; Technical Exposure</h2>
+        </div>
+
+        <div class="card-tech reveal">
+          <div class="exp-card">
+            <div class="exp-logo" aria-hidden="true">CT</div>
+            <div>
+              <h3>Celebal Technologies</h3>
+              <p class="mb-2"><strong>Cloud Infrastructure &amp; Security</strong></p>
+              <p>
+                Working in cloud infrastructure and security, with exposure to Azure-based enterprise environments,
+                infrastructure automation, networking, data platforms, and technical troubleshooting. Involved in
+                infrastructure documentation, POCs, platform configuration, and understanding secure cloud
+                architectures.
+              </p>
+            </div>
+          </div>
+
+          <h4 class="visually-hidden">Areas of contribution</h4>
+          <div class="contrib-grid">
+            <div class="contrib-item"><i class="bi bi-cloud"></i><span>Azure infrastructure provisioning and configuration</span></div>
+            <div class="contrib-item"><i class="bi bi-ethernet"></i><span>Private networking and connectivity</span></div>
+            <div class="contrib-item"><i class="bi bi-journal-text"></i><span>Infrastructure documentation and architecture understanding</span></div>
+            <div class="contrib-item"><i class="bi bi-filetype-tf"></i><span>Terraform-based infrastructure automation</span></div>
+            <div class="contrib-item"><i class="bi bi-database"></i><span>Azure Databricks and Microsoft Fabric platform work</span></div>
+            <div class="contrib-item"><i class="bi bi-bug"></i><span>Cloud troubleshooting and technical POCs</span></div>
+            <div class="contrib-item"><i class="bi bi-shield-lock"></i><span>Security, identity, and access-control concepts</span></div>
+            <div class="contrib-item"><i class="bi bi-people"></i><span>Technical walkthroughs and knowledge sharing</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         5. FEATURED PROJECTS  (cards are rendered by js/projects.js)
+         ================================================================== -->
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">Featured Projects</span>
+          <h2 id="projectsTitle">Hands-on work across cloud, data, and AI infrastructure</h2>
+          <p>
+            A mix of professional project exposure, POCs, hands-on labs, and learning builds — each one labelled
+            accordingly. Select <strong>View Details</strong> on any card for the full technical breakdown.
+          </p>
+        </div>
+
+        <!-- js/projects.js fills this container automatically -->
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         6. LEARNING & CONTINUOUS GROWTH
+         ================================================================== -->
+    <section class="section section--sunken" id="learning" aria-labelledby="learningTitle">
+      <div class="container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">Learning &amp; Continuous Growth</span>
+          <h2 id="learningTitle">Currently Learning &amp; Exploring</h2>
+        </div>
+
+        <div class="row g-4 g-xl-5">
+          <div class="col-lg-6">
+            <div class="timeline">
+              <div class="timeline-item reveal">
+                <h3><i class="bi bi-layers"></i> Microsoft Fabric</h3>
+                <ul class="tag-list">
+                  <li class="tag">Fabric architecture</li>
+                  <li class="tag">OneLake</li>
+                  <li class="tag">Lakehouse &amp; Warehouse</li>
+                  <li class="tag">Capacity &amp; workspace concepts</li>
+                  <li class="tag">Private Endpoints / MPEP</li>
+                  <li class="tag">VNet Data Gateway</li>
+                  <li class="tag">Proxy concepts</li>
+                  <li class="tag">Disaster Recovery concepts</li>
+                  <li class="tag">Purview integration</li>
+                  <li class="tag">Fabric LLD / SOW / IaC assumptions</li>
+                </ul>
+              </div>
+
+              <div class="timeline-item reveal">
+                <h3><i class="bi bi-database"></i> Azure Databricks</h3>
+                <ul class="tag-list">
+                  <li class="tag">Unity Catalog</li>
+                  <li class="tag">External Locations</li>
+                  <li class="tag">Storage Credentials</li>
+                  <li class="tag">Service Principals</li>
+                  <li class="tag">Job Compute</li>
+                  <li class="tag">Job Policies</li>
+                  <li class="tag">Private connectivity</li>
+                  <li class="tag">Lakeflow Connect</li>
+                  <li class="tag">Oracle CDC</li>
+                  <li class="tag">Network Connectivity Configuration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="timeline">
+              <div class="timeline-item reveal">
+                <h3><i class="bi bi-cloud"></i> Azure &amp; Cloud Infrastructure</h3>
+                <ul class="tag-list">
+                  <li class="tag">Azure networking</li>
+                  <li class="tag">Private Link</li>
+                  <li class="tag">Private DNS</li>
+                  <li class="tag">VPN / P2S / BGP concepts</li>
+                  <li class="tag">Application Gateway</li>
+                  <li class="tag">Load Balancer</li>
+                  <li class="tag">AKS</li>
+                  <li class="tag">Azure Arc</li>
+                  <li class="tag">Infrastructure automation</li>
+                </ul>
+              </div>
+
+              <div class="timeline-item reveal">
+                <h3><i class="bi bi-cpu"></i> AI &amp; Observability</h3>
+                <ul class="tag-list">
+                  <li class="tag">ClickHouse</li>
+                  <li class="tag">Langfuse</li>
+                  <li class="tag">LangChain</li>
+                  <li class="tag">Grafana</li>
+                  <li class="tag">MCP</li>
+                  <li class="tag">LibreChat</li>
+                  <li class="tag">AI infrastructure</li>
+                  <li class="tag">RAG</li>
+                  <li class="tag">AI agents</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="note-block reveal mt-5">
+          <i class="bi bi-quote"></i>
+          <span>I believe in continuous learning through documentation, hands-on labs, troubleshooting, and practical implementation.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         7. TECHNICAL APPROACH / HOW I WORK
+         ================================================================== -->
+    <section class="section" id="approach" aria-labelledby="approachTitle">
+      <div class="container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">Technical Approach</span>
+          <h2 id="approachTitle">How I Work</h2>
+          <p>A simple engineering loop I follow when approaching any infrastructure problem.</p>
+        </div>
+
+        <div class="approach-grid">
+          <div class="approach-step reveal">
+            <div class="step-num">01</div>
+            <i class="bi bi-search"></i>
+            <h3>Understand</h3>
+            <p>Break down requirements and architecture.</p>
+          </div>
+          <div class="approach-step reveal">
+            <div class="step-num">02</div>
+            <i class="bi bi-pencil-ruler"></i>
+            <h3>Design</h3>
+            <p>Identify services, dependencies, and connectivity.</p>
+          </div>
+          <div class="approach-step reveal">
+            <div class="step-num">03</div>
+            <i class="bi bi-gear"></i>
+            <h3>Automate</h3>
+            <p>Use Terraform and DevOps workflows where applicable.</p>
+          </div>
+          <div class="approach-step reveal">
+            <div class="step-num">04</div>
+            <i class="bi bi-shield-lock"></i>
+            <h3>Secure</h3>
+            <p>Apply identity, access control, and private connectivity principles.</p>
+          </div>
+          <div class="approach-step reveal">
+            <div class="step-num">05</div>
+            <i class="bi bi-bug"></i>
+            <h3>Troubleshoot</h3>
+            <p>Investigate failures through logs, configuration, and service behavior.</p>
+          </div>
+          <div class="approach-step reveal">
+            <div class="step-num">06</div>
+            <i class="bi bi-journal-text"></i>
+            <h3>Document</h3>
+            <p>Capture architecture, assumptions, and implementation details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         8. CERTIFICATIONS & 9. EDUCATION
+         ================================================================== -->
+    <section class="section section--sunken" id="credentials" aria-labelledby="credentialsTitle">
+      <div class="container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">Credentials</span>
+          <h2 id="credentialsTitle">Certifications &amp; Education</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6 reveal">
+            <div class="card-tech h-100">
+              <h3><i class="bi bi-patch-check"></i> Certifications &amp; Credentials</h3>
+              <p class="mb-3">Verified certifications will be listed here with the issuing organization, year, and credential link.</p>
+              <div class="note-block">
+                <i class="bi bi-info-circle"></i>
+                <span>Certifications and credentials will be added as they are completed.</span>
+              </div>
+              <!--
+                TEMPLATE — copy this block when a certification is completed:
+                <div class="contrib-item mt-2">
+                  <i class="bi bi-patch-check"></i>
+                  <span><strong>Certification name</strong><br>
+                  Issuing organization · Year · <a href="CREDENTIAL_LINK" target="_blank" rel="noopener">Verify</a></span>
+                </div>
+              -->
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="card-tech h-100">
+              <h3><i class="bi bi-mortarboard"></i> Education</h3>
+              <p class="mb-3">Academic background details will be listed here once verified.</p>
+              <div class="note-block">
+                <i class="bi bi-info-circle"></i>
+                <span>Degree, institution, and graduation year to be added.</span>
+              </div>
+              <!--
+                TEMPLATE — copy this block when education details are added:
+                <div class="contrib-item mt-2">
+                  <i class="bi bi-mortarboard"></i>
+                  <span><strong>Degree</strong><br>Institution · Graduation year</span>
+                </div>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         10. CONTACT / FINAL CTA
+         ================================================================== -->
+    <section class="section" id="contact" aria-labelledby="contactTitle">
+      <div class="container-narrow">
+        <div class="contact-card reveal">
+          <span class="eyebrow">Let's Connect</span>
+          <h2 id="contactTitle">Let's connect and talk cloud infrastructure.</h2>
+          <p class="lead mx-auto" style="max-width: 56ch;">
+            I'm open to connecting with professionals working in cloud infrastructure, DevOps, Azure,
+            data platforms, and AI infrastructure.
+          </p>
+          <div class="contact-actions">
+            <a href="LINKEDIN_URL" target="_blank" rel="noopener noreferrer" class="btn-tech">
+              <i class="bi bi-linkedin"></i> Connect on LinkedIn
+            </a>
+            <a href="assets/resume/Namrata_Soni_Resume.pdf" target="_blank" rel="noopener" class="btn-tech btn-tech-outline">
+              <i class="bi bi-file-earmark-person"></i> View Resume
+            </a>
+            <a href="EMAIL_ADDRESS" class="btn-tech btn-tech-outline">
+              <i class="bi bi-envelope"></i> Send Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="footer">
+    <div class="container-narrow">
+      <div class="footer-grid">
+        <div>
+          <a href="#hero" class="brand">
+            <span class="brand-mark"><i class="bi bi-cloud"></i></span>
+            <span>Namrata Soni<small>Cloud Infra &amp; Security</small></span>
+          </a>
+          <p class="text-muted-2 mb-0 mt-2" style="max-width: 34ch;">
+            Building secure, scalable, and automated cloud infrastructure.
+          </p>
+          <div class="hero-meta mt-3">
+            <a href="LINKEDIN_URL" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="GITHUB_URL" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="EMAIL_ADDRESS" aria-label="Email">
+              <i class="bi bi-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="h6 text-muted-2 mb-3">Sitemap</h3>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#learning">Learning</a>
+            <a href="assets/resume/Namrata_Soni_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <a href="LINKEDIN_URL" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="GITHUB_URL" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="EMAIL_ADDRESS">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Namrata Soni. All rights reserved.</span>
+        <span>Built with HTML, CSS, Bootstrap 5 &amp; vanilla JavaScript.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       SCRIPTS — loaded at the end of <body> so the page renders first.
+       Order matters: theme.js applies the saved theme before paint.
+       ===================================================================== -->
+  <script src="js/theme.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

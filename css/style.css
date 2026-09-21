@@ -1,0 +1,237 @@
+/* =====================================================================
+   Namrata Soni — Cloud Infrastructure & Security Portfolio
+   style.css  →  Theme tokens, base styles, and page layout
+
+   HOW THIS FILE IS ORGANISED
+   ---------------------------------------------------------------------
+   1. Theme tokens  → CSS variables (colors, fonts, spacing) for dark/light
+   2. Base styles   → reset, body, typography, links, buttons
+   3. Layout        → sections, containers, grid helpers, background art
+   4. Utilities     → small reusable helper classes
+
+   NOTE: Component styles (cards, badges, modals, timeline) live in
+   components.css so each file stays small and easy to read.
+   ===================================================================== */
+
+/* ============================ 1. THEME TOKENS ============================ */
+:root {
+  /* Brand / accent — subtle blue-violet used on both themes */
+  --accent:            #6d8cff;
+  --accent-strong:     #4f6ef0;
+  --accent-soft:       rgba(109, 140, 255, 0.14);
+  --accent-line:       rgba(109, 140, 255, 0.35);
+
+  /* Neutral ramp (dark theme = default) */
+  --bg:                #0b0f1a;
+  --bg-elevated:       #111827;
+  --bg-sunken:         #080b13;
+  --surface:           rgba(255, 255, 255, 0.035);
+  --surface-hover:     rgba(255, 255, 255, 0.065);
+  --border:            rgba(255, 255, 255, 0.09);
+  --border-strong:     rgba(255, 255, 255, 0.16);
+
+  /* Text */
+  --text:              #e8ecf5;
+  --text-muted:        #9aa6bd;
+  --text-faint:        #6b7690;
+
+  /* Status / category colours (used for project type labels) */
+  --pro:               #6d8cff;
+  --poc:               #8b7bff;
+  --lab:               #38c6a3;
+  --learn:             #f0a23c;
+
+  /* Typography */
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", "JetBrains Mono", Consolas, "Liberation Mono", monospace;
+
+  /* Radii + shadows + motion */
+  --radius-sm: 8px;
+  --radius:    14px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow:    0 10px 30px -12px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 24px 60px -24px rgba(0, 0, 0, 0.7);
+  --ease:      cubic-bezier(0.22, 1, 0.36, 1);
+  --transition: 200ms var(--ease);
+
+  /* Section rhythm */
+  --section-y: 5.5rem;
+  --nav-h:     66px;
+}
+
+/* Light theme overrides — activated by <html data-theme="light"> */
+html[data-theme="light"] {
+  --bg:            #f6f8fc;
+  --bg-elevated:   #ffffff;
+  --bg-sunken:     #eef2f9;
+  --surface:       #ffffff;
+  --surface-hover: #f2f5fb;
+  --border:        #e2e8f4;
+  --border-strong: #ccd5e8;
+  --text:          #131a2c;
+  --text-muted:    #54637d;
+  --text-faint:    #7c8aa3;
+
+  --accent:        #3f5ce0;
+  --accent-strong: #2f49c4;
+  --accent-soft:   rgba(63, 92, 224, 0.09);
+  --accent-line:   rgba(63, 92, 224, 0.28);
+
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow:    0 12px 32px -16px rgba(16, 24, 40, 0.22);
+  --shadow-lg: 0 28px 60px -28px rgba(16, 24, 40, 0.32);
+}
+
+/* ============================ 2. BASE STYLES ============================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + 1.25rem); /* offset for sticky nav */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+  color: var(--text);
+}
+h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
+h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); }
+h3 { font-size: 1.15rem; }
+p  { margin: 0 0 1rem; color: var(--text-muted); }
+p.lead { font-size: 1.06rem; color: var(--text-muted); }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover { color: var(--accent-strong); }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+code, kbd, pre {
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+}
+
+::selection { background: var(--accent-soft); color: var(--text); }
+
+/* Focus ring — keyboard-friendly accessibility */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ============================ 3. LAYOUT ============================ */
+
+/* Section wrapper — consistent vertical rhythm across the page */
+.section {
+  padding-block: var(--section-y);
+  position: relative;
+}
+
+/* Alternating subtle band so long pages stay readable */
+.section--sunken { background-color: var(--bg-sunken); }
+
+.container-narrow { max-width: 1120px; margin-inline: auto; padding-inline: 1.5rem; }
+
+/* Section heading block: small eyebrow label + title + intro */
+.section-head { max-width: 62ch; margin-bottom: 2.75rem; }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.85rem;
+}
+.eyebrow::before {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: var(--accent-line);
+}
+
+.section-head p { margin-bottom: 0; }
+
+/* ---- Decorative technical background: grid + soft glow -------------- */
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 20%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 20%, transparent 78%);
+}
+:root { --grid-line: rgba(255, 255, 255, 0.045); }
+html[data-theme="light"] { --grid-line: rgba(16, 24, 40, 0.055); }
+
+.page-bg::after {
+  content: "";
+  position: absolute;
+  top: -12%;
+  right: -8%;
+  width: 46vw;
+  height: 46vw;
+  max-width: 640px;
+  max-height: 640px;
+  background: radial-gradient(circle, var(--accent-soft), transparent 68%);
+  filter: blur(6px);
+}
+
+/* ============================ 4. UTILITIES ============================ */
+
+.text-muted-2 { color: var(--text-muted) !important; }
+.font-mono    { font-family: var(--font-mono) !important; }
+
+/* Small gradient hairline used as a divider */
+.rule {
+  height: 1px;
+  border: 0;
+  background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+  margin: 0;
+}
+
+/* Scroll-reveal hook (js/script.js toggles .is-visible) */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 600ms var(--ease), transform 600ms var(--ease);
+  will-change: opacity, transform;
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
